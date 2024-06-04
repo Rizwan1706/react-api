@@ -33,7 +33,7 @@ export default function EditPost() {
     }
     const response = await fetch(`https://mern-server-964b.onrender.com/post`, {
       method: 'PUT',
-      body: data,
+      body:json_encode(data).JSON.parse(data),
       
     });
     if (response.ok) {
