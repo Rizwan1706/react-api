@@ -7,7 +7,7 @@ export default function Header (){
   const {setUserInfo,userInfo} = useContext(UserContext);
   useEffect(() => {
     fetch(`https://mern-server-964b.onrender.com/profile`, {
-      credentials: 'include',
+      
     }).then(response => {
       response.json().then(userInfo => {
         setUserInfo(userInfo);
@@ -16,7 +16,7 @@ export default function Header (){
   }, []);
   function logout() {
     fetch(`https://mern-server-964b.onrender.com/logout`, {
-      credentials: 'include',
+      
       method: 'POST',
     });
     setUserInfo("");

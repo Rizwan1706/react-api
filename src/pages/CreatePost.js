@@ -20,7 +20,7 @@ export default function CreatePost() {
     const response = await fetch(`https://mern-server-964b.onrender.com/post`, {
       method: 'POST',
       body: data,
-      credentials: 'include',
+      
     });
     if (response.ok) {
       setRedirect(true);
