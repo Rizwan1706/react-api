@@ -19,7 +19,7 @@ export default function CreatePost() {
     ev.preventDefault();
     const response = await fetch(`https://mern-server-964b.onrender.com/post`, {
       method: 'POST',
-      body:json_encode(data).JSON.parse(data),
+      body:JSON.parse(data),
       
     });
     if (response.ok) {
