@@ -6,7 +6,7 @@ export default function Post ({_id,title,summary,cover,content,createdAt,author}
         <div className="post">
         <div className="image">
           <Link to={`/post/${_id}`}>
-          <img src={'http://localhost:8000/'+cover} alt="p"/>
+          <img src={`https://mern-server-964b.onrender.com/`+cover} alt="p"/>
           </Link>
         
     </div> 
