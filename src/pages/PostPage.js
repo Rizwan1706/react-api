@@ -9,7 +9,7 @@ export default function PostPage() {
 
     const { id } = useParams();
     useEffect(() => {
-        fetch(`https://mern-server-964b.onrender.com/${id}`)
+        fetch(`https://mern-server-964b.onrender.com/post/${id}`)
             .then(response => {
                 response.json().then(postInfo => {
                     setPostInfo(postInfo);
